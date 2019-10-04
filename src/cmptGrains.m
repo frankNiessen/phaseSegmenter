@@ -2,7 +2,7 @@ function [grains,ebsd] = cmptGrains(ebsd,varargin)
 %% User input - Parameter selection
 scrPrnt('SegmentStart','Computing Grains from EBSD data');
 answer = inputdlg({'Min. GB angle [°]:','Min. Grain size [pxs]: (keep empty for no removal of small grains)'},...
-                   'Grain computation',[1 70],{'2',''});                   %Get min GB angle and Min grain size
+                   'Grain computation',[1 70],{'10',''});                   %Get min GB angle and Min grain size
 if isempty(answer); error('Terminated by user'); end
 misOri = str2double(answer{1})*degree;                                     %Threshold misorientation [rad]
 minGsz = str2double(answer{2});                                            %Minimum grain size [pxs]

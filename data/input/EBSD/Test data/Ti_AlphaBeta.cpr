@@ -1,0 +1,68 @@
+[General]
+Version=5.0
+Date=4/10/2019
+Time=11:48:29 AM
+Duration=
+PerCycle=
+Description=
+Author=
+Notes=Import from Channel Text File
+JobMode=RegularGrid
+SampleSymmetry=0
+Modified=True
+[Job]
+Coverage=100.0
+Magnification=0
+kV=0.00
+TiltAngle=0.00
+TiltAxis=0.00
+Device=None
+GridDistX=0.1000
+GridDistY=0.1000
+xCells=601
+yCells=601
+[Acquisition Surface]
+Euler1=0.0
+Euler2=0.0
+Euler3=0.0
+[Fields]
+Count=8
+Field1=3
+Field2=4
+Field3=5
+Field4=6
+Field5=7
+Field6=8
+Field7=10
+Field8=11
+[Phases]
+Count=2
+[Phase1]
+StructureName=beta
+Reference=Created from mtex
+Enabled=True
+a=3.2500
+b=3.2500
+c=3.2500
+alpha=90.00
+beta=90.00
+gamma=90.00
+LaueGroup=11
+ID1=
+ID2=
+[Maximum indices]
+Phase1=444
+Phase2=444
+[Phase2]
+StructureName=alpha
+Reference=Created from mtex
+Enabled=True
+a=2.9540
+b=2.9540
+c=4.7290
+alpha=90.00
+beta=90.00
+gamma=120.00
+LaueGroup=9
+ID1=
+ID2=

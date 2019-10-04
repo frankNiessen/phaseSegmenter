@@ -1,0 +1,16 @@
+Channel Text File
+Prj Params
+Author	fniessen
+JobMode	Grid
+XCells	250
+YCells	250
+XStep	0.1000
+YStep	0.1000
+AcqE1	0.0000
+AcqE2	0.0000
+AcqE3	0.0000
+Euler angles refer to Sample Coordinate system (CS0)!	Mag	0.0000	Coverage	0	Device	0	KV	0.0000	TiltAngle	0.0000	TiltAxis	0	DetectorOrientationE1	0.0000	DetectorOrientationE2	0.0000	DetectorOrientationE3	0.0000	WorkingDistance	0.0000	InsertionDistance	0.0000	
+Phases	2
+3.250;3.250;3.250	90.000;90.000;90.000	beta	11	0			Created from mtex
+2.954;2.954;4.729	90.000;90.000;120.000	alpha	9	0			Created from mtex
+Phase	X	Y	Bands	Error	Euler1	Euler2	Euler3	MAD	BC	BS

@@ -18,7 +18,7 @@ end
 %% Renaming Phases (Minerals)
 phaseIDs = unique(ebsd('indexed').phaseId);
 phases = unique(ebsd('indexed').phase);
-if ~isempty(intersect(ebsd('indexed').mineralList,phStr)) && all(strcmp(intersect(ebsd('indexed').mineralList,phStr),phStr)) %Check if all phase names agree with name in EBSD data set
+if ~isempty(intersect(ebsd('indexed').mineralList,phStr)) && all(contains(intersect(ebsd('indexed').mineralList,phStr),phStr)) %Check if all phase names agree with name in EBSD data set
     scrPrnt('Step',sprintf('Phases %sautomatically identified',sprintf('''%s'' ',phStr{:}))); 
 else
     scrPrnt('Step','Identifying phases');
