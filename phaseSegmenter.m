@@ -5,9 +5,19 @@
 % phases in an EBSD dataset by grain-median EDS thresholding
 % *************************************************************************
 % Dr. Frank Niessen, University of Wollongong, Australia, 2019
-% contactnospam@fniessen.com (remove the nospam to make this email address 
+% contactnospam@fniessen.com (remove the nospam to make this email address
 % work)
+% Dr. Azdiar A. Gazder is acknowledged for drafting the concept of this method
+% and supporting the implementation in this program.
 % License provided in root directory
+% *************************************************************************
+% If you use this script for research and find it useful I would appreciate a
+% citation of the associated article:
+% [F. Niessen, A. A. Gazder, Discriminating β, α and α'' phases in metastable
+% β titanium alloys via segmentation: A combined electron backscattering
+% diffraction and energy-dispersive X-ray spectroscopy approach,
+% Ultramicroscopy, 2020, DOI: 10.1016/j.ultramic.2020.112943]
+% *************************************************************************
 clear all; clear hidden; clc; close all; warning('off','all');
 scrPrnt('StartUp','phaseSegmenter');                                       %StartUp Screen Print
 %% User Input
