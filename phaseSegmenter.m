@@ -11,7 +11,7 @@
 % and supporting the implementation in this program.
 % License provided in root directory
 % *************************************************************************
-% If you use this script for research and find it useful I would appreciate a
+% If you use this script for research and find it useful we would appreciate a
 % citation of the associated article:
 % [F. Niessen, A. A. Gazder, Discriminating β, α and α'' phases in metastable
 % β titanium alloys via segmentation: A combined electron backscattering
