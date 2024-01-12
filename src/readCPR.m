@@ -11,7 +11,7 @@ if FileName == 0
     error('The program was terminated by the user');
 else
     scrPrnt('Step',sprintf('Loading file ''%s''',FileName));
-    [ebsd,cpr] = loadEBSD_crc([inPath FileName],'interface','crc','convertSpatial2EulerReferenceFrame');
+    ebsd = loadEBSD_crc([inPath FileName],'interface','crc','convertSpatial2EulerReferenceFrame');
     ebsd = ebsd.gridify;
     scrPrnt('Step',sprintf('Loaded file ''%s'' succesfully',FileName));
 end
@@ -33,4 +33,3 @@ else
 end
 %% Save output data
 ebsd.opt.fName = FileName;                                                 %Save filename
-ebsd.opt.cprData = cpr;                                                    %Save cpr data

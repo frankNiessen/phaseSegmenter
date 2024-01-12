@@ -52,7 +52,7 @@ elseif isempty(answer) || strcmp(answer,modes{2})                          %Impo
             else
                 scrPrnt('SubStep',sprintf('Reading EDS data from file ''%s''',fNames{ind}));
             end                       
-            eds.(Dat.EDS.names{i}) = csvread([pathName,'\',fNames{ind}]);  %Read in data
+            eds.(Dat.EDS.names{i}) = csvread([pathName,'/',fNames{ind}]);  %Read in data
             %Check conformity of spatial data with EBSD data set
             chkSz = size(eds.(Dat.EDS.names{i})) - size(eds.all);          %Size difference to EBSD data-set        
             if chkSz(1) == 0 && chkSz(2) == 1                              %Csv file contains extra column

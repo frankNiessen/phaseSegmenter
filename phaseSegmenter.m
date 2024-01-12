@@ -20,6 +20,7 @@
 % *************************************************************************
 clear all; clear hidden; clc; close all; warning('off','all');
 scrPrnt('StartUp','phaseSegmenter');                                       %StartUp Screen Print
+startup_mtex;
 %% User Input
 Dat.EBSD.phases = {'alpha','alphaDP','beta'};                              %List of all phase names that are used in the segmentation and reassignment process
 Dat.EDS.names = {'Ti','V','Al','Fe','C'};                                  %EDS channel names
@@ -27,7 +28,6 @@ Dat.EDS.act =   [  1   1    1    1   0];                                   %Stat
 Dat.EDS.identifier = 'unknown';                                            %Identifier-string of EDS channels in mTex ebsd structure field 'ebsd.prop' (not required for read in via 'csv' files)
 % ... Editing of the code below this line not recommended ...
 %% Initialization
-startup_mtex;                                                              %StartUp m-tex
 % *** FilePaths
 Dat.EBSD.inPath = [fileparts(mfilename('fullpath')),'\data\input\EBSD'];   %Default input folder EBSD data
 Dat.EBSD.outPath = [fileparts(mfilename('fullpath')),'\data\output\EBSD']; %Output folder EBSD data
