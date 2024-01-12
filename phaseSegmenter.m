@@ -54,5 +54,5 @@ tileFigs;                                                                  %Tile
 outName = [Dat.EBSD.outPath,'\',strtok(ebsd.all.opt.fName,'.'),...
            '_Processed.ctf'];                                              %Output filename
 ebsd.out.opt = ebsd.all.opt;                                               %Transfer structure 'options' to ebsd.out
-exportCTF(ebsd.out,outName,'Params',ebsd.out.opt.cprData);                 %Export ctf file
+exportCTF(ebsd.out,outName);                                               %Export ctf file
 scrPrnt('SegmentEnd');                                                     %ScreenPrint
