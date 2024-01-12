@@ -11,4 +11,5 @@ B.upper(B.upper>1) = 1;
 B.lower = mean(I(:))-std(I(:))*fac;
 B.lower(B.lower<0) = 0;
 %Rescale image array
-I = imadjust(I,[B.lower; B.upper],[0; 1]);
+I = imadjust3(I,[B.lower; B.upper],[0; 1]);
+

@@ -107,9 +107,9 @@ eds.proc = zeros(size(eds.all));                                           %Init
 for i = 1:size(chNr,2)
     tmp = eds.(Dat.EDS.names{abs(chNr(i))});                               %Get EDS channel
     if chNr(i)<0
-       tmp = imcomplement(tmp);                                            %Invert
+       tmp = 1-tmp;                                                        %Invert
     end
-%     tmp = tmp./eds.all;                                                    %Normalize pixel intensities
+%     tmp = tmp./eds.all;                                                  %Normalize pixel intensities
     tmp = (tmp-min(min(tmp)))/(max(max(tmp))-min(min(tmp)));               %Normalize intensity [0 1]
     eds.proc = eds.proc + tmp;                                             %Add EDS channel to processing channel
 end
